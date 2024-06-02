@@ -25,13 +25,13 @@ def shortest_path_from_source_to_all_nodes(graph: list[list[tuple[int, int]]], s
     return distances
 
 if __name__ == "__main__":
-    graph = [
+    adj_mat = [
         [(1, 1), (2, 4)],
         [(0, 1), (2, 2), (3, 5)],
         [(0, 4), (1, 2), (3, 1)],
         [(1, 5), (2, 1)]
     ]
-    print(shortest_path_from_source_to_all_nodes(graph, 0))  # Output: [0, 1, 3, 4]
-    print(shortest_path_from_source_to_all_nodes(graph, 1))  # Output: [1, 0, 2, 3]
-    print(shortest_path_from_source_to_all_nodes(graph, 2))  # Output: [3, 2, 0, 1]
-    print(shortest_path_from_source_to_all_nodes(graph, 3))  # Output: [4, 5, 1, 1]
+    print(shortest_path_from_source_to_all_nodes(adj_mat, 0))  # Output: [0, 1, 3, 4]
+    print(shortest_path_from_source_to_all_nodes(adj_mat, 1))  # Output: [1, 0, 2, 3]
+    print(shortest_path_from_source_to_all_nodes(adj_mat, 2))  # Output: [3, 2, 0, 1]
+    print(shortest_path_from_source_to_all_nodes(adj_mat, 3))  # Output: [4, 5, 1, 1]
