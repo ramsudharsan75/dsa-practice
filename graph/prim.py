@@ -2,7 +2,7 @@ from heapq import heappop, heappush
 from math import inf
 
 
-def get_minimum_spanning_tree(graph: list[tuple[int, int]]) -> int:
+def get_minimum_spanning_tree_distance(graph: list[tuple[int, int]]) -> int:
     """Get the minimum spanning tree of a graph using Prim's algorithm."""
     mst_dist = 0
     n = len(graph)
@@ -35,4 +35,4 @@ if __name__ == "__main__":
         [(3, 0), (3, 1), (1, 3)],
         [(4, 1), (1, 2)],
     ]
-    print(get_minimum_spanning_tree(adj_mat))  # 6
+    print(get_minimum_spanning_tree_distance(adj_mat))  # 6
